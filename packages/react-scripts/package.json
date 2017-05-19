@@ -1,6 +1,6 @@
 {
   "name": "@timelab/react-scripts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Configuration and scripts for Create React App.",
   "repository": "facebookincubator/create-react-app",
   "license": "BSD-3-Clause",
@@ -52,7 +52,7 @@
     "postcss-flexbugs-fixes": "3.0.0",
     "postcss-loader": "2.0.5",
     "promise": "7.1.1",
-    "react-dev-utils": "^1.0.0",
+    "@timelab/react-dev-utils": "^1.0.0",
     "react-error-overlay": "^1.0.0",
     "sass-loader": "^6.0.5",
     "style-loader": "0.17.0",

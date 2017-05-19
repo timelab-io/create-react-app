@@ -257,7 +257,9 @@ function prepareProxy(proxy) {
   // - /*.hot-update.json (WebpackDevServer uses this too for hot reloading)
   // - /sockjs-node/* (WebpackDevServer uses this for hot reloading)
   // Tip: use https://jex.im/regulex/ to visualize the regex
-  const mayProxy = /^(?!\/(index\.html$|.*\.hot-update\.json$|sockjs-node\/)).*$/;
+  //
+  // ADD: favicon.ico & logo.png
+  const mayProxy = /^(?!\/(index\.html$|favicon\.ico$|logo\.png$|.*\.hot-update\.json$|sockjs-node\/)).*$/;
 
   // Support proxy as a string for those who are using the simple proxy option
   if (typeof proxy === 'string') {

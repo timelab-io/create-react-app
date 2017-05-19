@@ -1,5 +1,5 @@
 {
-  "name": "react-dev-utils",
+  "name": "@timelab/react-dev-utils",
   "version": "1.0.0",
   "description": "Webpack utilities used by Create React App",
   "repository": "facebookincubator/create-react-app",
