@@ -10,6 +10,9 @@
 
 const plugins = [
 
+  // enable relay
+  require.resolve('babel-plugin-react-relay'),
+
   // enable export extension experimental feature
   require.resolve('babel-plugin-transform-export-extensions'),
 
