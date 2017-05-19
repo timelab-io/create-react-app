@@ -71,7 +71,9 @@ choosePort(HOST, DEFAULT_PORT)
       : process.env.HTTP_PROXY;
 
     // Check if we are passing a plain string or stringified JSON object
-    const isJSONString = /[\{\[]/.test(proxyFromEnv.trimLeft().charAt(0));
+    const isJSONString = proxyFromEnv
+      ? /[\{\[]/.test(proxyFromEnv.trimLeft().charAt(0))
+      : false;
 
     const proxySetting = proxyFromEnv
       ? isJSONString ? JSON.parse(proxyFromEnv) : proxyFromEnv
