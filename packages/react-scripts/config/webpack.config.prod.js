@@ -98,6 +98,9 @@ module.exports = {
     // for React Native Web.
     extensions: ['.web.js', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
+      // for isotope-layout
+      masonry: 'masonry-layout',
+      isotope: 'isotope-layout',
       // @remove-on-eject-begin
       // Resolve Babel runtime relative to react-scripts.
       // It usually still works on npm 3 without this but it would be
@@ -289,8 +292,8 @@ module.exports = {
                   },
                 },
                 {
-                  loader: require.resolve('sass-loader')
-                }
+                  loader: require.resolve('sass-loader'),
+                },
               ],
             },
             extractTextPluginOptions
